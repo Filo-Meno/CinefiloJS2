@@ -8,6 +8,8 @@ const app = express();
 
 app.set('port', process.env.PORT || 8080); //Process.env.port para cuando sea despleagdo
 
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 const dbConfig = {
     host: 'cinefilo.mysql.database.azure.com',
