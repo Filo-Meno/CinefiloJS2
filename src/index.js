@@ -7,7 +7,7 @@ const routes = require('./routes');
 
 const app = express();
 
-app.set('port', process.env.PORT || 8080); //Process.env.port para cuando sea despleagdo
+app.set('port', process.env.PORT || 3000); //Process.env.port para cuando sea despleagdo
 app.use(cors());
 
 app.use(express.urlencoded({extended: false}));
